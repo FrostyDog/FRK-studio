@@ -1,4 +1,94 @@
+.App {
+  padding: 5% 10%;
+}
+
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+.upper-controls {
+  position: fixed;
+  top: 7%;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  .left-contact {
+    position: absolute;
+    right: 10%;
+  }
+}
+
+.MuiButton-root {
+  min-width: fit-content !important;
+  font-size: 1.2rem !important;
+}
+
+.button {
+  min-width: 5% !important;
+  margin: 0 1% !important;
+}
+
+.bold {
+  font-weight: 900;
+}
+
+.arrow {
+  width: 25px;
+  height: 30px;
+  margin: 0 auto;
+  display: block;
+  position: fixed;
+  bottom: 5%;
+  left: calc(50% - 12.5px);
+  //   &.works {
+  //     position: fixed;
+  //     bottom: 5%;
+  //     left: calc(50% - 12.5px);
+  //   }
+}
+
+.secondary {
+  color: #ff0000;
+}
+
+// default is for bio
+.header-info {
+  height: 50vh;
+  display: flex;
+  margin-top: 15vh;
+  flex-direction: column;
+  justify-content: start;
+  transition: all 1s ease-in-out;
+  .sub-text {
+    margin: 2.5% 0;
+  }
+  .main-title {
+    transition: all 1s ease-in-out;
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+
+  &.works {
+    margin-top: 25vh;
+
+    .main-title {
+      max-width: fit-content;
+      position: relative;
+      left: 70%;
+      top: 20%;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .header-info.works {
+    .main-title {
+      left: 0;
+      top: 0;
+    }
+  }
 }
