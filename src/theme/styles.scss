@@ -42,12 +42,9 @@ a {
   display: block;
   position: fixed;
   bottom: 5%;
-  left: calc(50% - 12.5px);
-  //   &.works {
-  //     position: fixed;
-  //     bottom: 5%;
-  //     left: calc(50% - 12.5px);
-  //   }
+//   left: calc(50% - 12.5px);
+left: 50%;
+transform: translate(-50%, -50%);
 }
 
 .secondary {
@@ -68,6 +65,7 @@ a {
   .main-title {
     transition: all 1s ease-in-out;
     position: relative;
+    max-width: fit-content;
     left: 0;
     top: 0;
   }
@@ -76,7 +74,7 @@ a {
     margin-top: 25vh;
 
     .main-title {
-      max-width: fit-content;
+
       position: relative;
       left: 70%;
       top: 20%;
