@@ -8,12 +8,10 @@ import StableInfo from "./components/MainControls";
 import "./theme/styles.scss";
 
 function App() {
-
   // make do somthing if needed
-  function makeDown(Component) {
-    return <Component name="Really New Name" />;
-  }
-
+  // function makeDown(Component) {
+  //   return <Component name="Really New Name" />;
+  // }
 
   // navigation function
   let setNewStance = (newStance) => {
