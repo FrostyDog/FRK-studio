@@ -1,5 +1,3 @@
-
-
 .App {
   padding: 5% 7%;
   overflow: hidden;
@@ -30,7 +28,7 @@ a {
 }
 
 .MuiTypography-h4 {
-    width: fit-content;
+  width: fit-content;
 }
 
 .button {
@@ -76,6 +74,16 @@ a {
     left: 0;
     top: 0;
   }
+  .round-text {
+    position: absolute;
+    height: 250%;
+    width: 250%;
+    top: -90%;
+    left: -30%;
+    z-index: -2;
+    @media screen and (max-width: 1450px) {
+      display: none;
+  }}
 
   &.works {
     margin-top: 25vh;
@@ -87,10 +95,10 @@ a {
     }
   }
 }
-// work item 
+// work item
 .work-item-wrapper {
   padding-top: 10%;
-  margin-bottom: 7%!important;
+  margin-bottom: 7% !important;
   position: relative;
   img {
     width: 100%;
@@ -109,8 +117,8 @@ a {
     width: 100%;
     z-index: -2;
   }
-  p{
-      margin-bottom: 10%;
+  p {
+    margin-bottom: 10%;
   }
   .background {
     position: absolute;

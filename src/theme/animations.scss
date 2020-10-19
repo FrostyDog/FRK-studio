@@ -1,0 +1,15 @@
+@keyframes you-spin-me-round {
+  0% {
+    transform: rotate(-180deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+.round-text {
+  animation-name: you-spin-me-round;
+  animation-duration: 12s;
+  animation-timing-function: linear;
+  transform: rotate(180deg);
+}
