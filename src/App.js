@@ -8,16 +8,21 @@ import StableInfo from "./components/MainControls";
 import "./theme/styles.scss";
 
 function App() {
-  // make do somthing if needed
-  // function makeDown(Component) {
-  //   return <Component name="Really New Name" />;
-  // }
+ 
+  let initialNavigation = () => {
+    let x = window.location.href.split('/')
+    return(x.[x.length-1])
+  }
+
+
+
+
 
   // navigation function
   let setNewStance = (newStance) => {
     changeStance(newStance);
   };
-  let [stance, changeStance] = useState("works");
+  let [stance, changeStance] = useState(initialNavigation());
 
   return (
     <div className="App">
@@ -28,7 +33,7 @@ function App() {
             exact
             path="/"
             render={() => {
-              return <Redirect to="/bio" />;
+              return <Redirect to="/works" />;
             }}
           />
           <Route exact path="/bio" render={() => <Bio name="Bio" />} />
