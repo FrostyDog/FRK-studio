@@ -10,6 +10,7 @@ a {
 
 .upper-controls {
   position: fixed;
+  z-index: 3;
   top: 7%;
   left: 0;
   display: flex;
@@ -18,12 +19,28 @@ a {
   width: 100%;
   .left-contact {
     position: absolute;
+    z-index: 2;
     right: 10%;
     @media screen and (max-width: 700px) {
       position: static;
       padding-left: 20px;
     }
-    
+    .icon-wrapper {
+      display: flex;
+      a {
+        display: flex;
+        justify-content: center;
+        background-color: unset;
+        transition: all 0.5s ease-in-out;
+        &:hover {
+          background-color: #ffc0cb;
+          border-radius: 5px;
+        }
+      }
+      img {
+        width: 80%;
+      }
+    }
   }
 }
 
@@ -56,7 +73,6 @@ a {
   display: block;
   position: fixed;
   bottom: 5%;
-  //   left: calc(50% - 12.5px);
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -177,11 +193,11 @@ a {
   @media screen and (max-width: 800px) {
     max-width: 90%;
   }
-  
+
   .sub-text {
     margin: 2.5% 0;
   }
-  
+
   .space-20 {
     height: 20vh;
   }
@@ -204,7 +220,6 @@ a {
   .header-info.works {
     .main-title {
       left: 30%;
-      top: 0;
     }
   }
 }
@@ -213,7 +228,6 @@ a {
   .header-info.works {
     .main-title {
       left: 0;
-      top: 0;
     }
   }
 }

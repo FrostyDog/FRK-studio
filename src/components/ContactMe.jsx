@@ -6,32 +6,38 @@ import "../theme/form.scss";
 emailjs.init("user_pvw2UgxzHtwfYODiHHnep");
 
 export default function ContactMe() {
+  // Mail initialization
   function initMail() {
     emailjs.init("user_pvw2UgxzHtwfYODiHHnep");
-    console.log("init");
   }
 
   initMail();
 
+  // Email sending on click
+
   function sendEmail(e) {
-    console.log("submit");
     e.preventDefault();
 
-    emailjs.sendForm("service_frkfrkfrk", "template_nff9fet", e.target, "user_pvw2UgxzHtwfYODiHHnep").then(
-      (result) => {
-        console.log(result.text);
-      },
-      (error) => {
-        console.log(error.text);
-      }
-    );
+    if (e.target[1].value === "" || e.target[3].value === "" || e.target[5].value === "") {
+      alert("Please, fill all of the details");
+    } else {
+      emailjs.sendForm("service_frkfrkfrk", "template_nff9fet", e.target, "user_pvw2UgxzHtwfYODiHHnep").then(
+        (result) => {
+          console.log(result.text);
+        },
+
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    }
   }
 
   return (
     <form className="contact-form" onSubmit={(e) => sendEmail(e)}>
       <input type="hidden" name="contact_number" />
       <TextField id="outlined-basic" name="name" fullWidth label="name" variant="outlined" />
-      <TextField id="outlined-basic" name="email" fullWidth label="e-mail" variant="outlined" />
+      <TextField id="outlined-basic" type="email" name="email" fullWidth label="e-mail" variant="outlined" />
       <TextField
         id="outlined-multiline-static"
         label="message"

@@ -1,9 +1,12 @@
 import React from "react";
-import {useState} from "react";
+import { useState } from "react";
 import { Button, Typography } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import RoundText from "../assets/round-text.svg";
 import "../theme/animations.scss";
+import Behance from "../assets/icons/behance.png";
+import Insta from "../assets/icons/instagram-logo.png";
+import Twitter from "../assets/icons/twitter-logo-button.png";
 
 export default function StableInfo(props) {
   let worksOutlined;
@@ -11,13 +14,12 @@ export default function StableInfo(props) {
   let [RoundTextStance, setRoundTextStance] = useState(false);
   let [figura, setFigura] = useState(false);
 
-
   switch (props.stance) {
     case "works":
       worksOutlined = "outlined";
       bioOutlined = null;
-      if(figura === true) {
-        setFigura(false)
+      if (figura === true) {
+        setFigura(false);
       }
       setTimeout(() => {
         setRoundTextStance(true);
@@ -29,8 +31,9 @@ export default function StableInfo(props) {
       setTimeout(() => {
         setFigura(true);
       }, 1200);
-      if(RoundTextStance === true){
-      setRoundTextStance(false)}
+      if (RoundTextStance === true) {
+        setRoundTextStance(false);
+      }
       break;
     default:
   }
@@ -41,18 +44,23 @@ export default function StableInfo(props) {
       <div className="upper-controls">
         <Button className="button" variant={bioOutlined} color="primary">
           {" "}
-          <Link onClick={() => props.changeStance("bio")}  to="/bio">
+          <Link onClick={() => props.changeStance("bio")} to="/bio">
             Bio
           </Link>
         </Button>{" "}
         <Button className="button" variant={worksOutlined} color="primary">
           {" "}
-          <Link onClick={() => props.changeStance("works")}  to="/works">
+          <Link onClick={() => props.changeStance("works")} to="/works">
             Works
           </Link>
         </Button>
         <div className="left-contact">
           <Button color="primary">Contact</Button>
+          <div className="icon-wrapper">
+            <a href="https://www.behance.net/uxfrk" target="_blank" rel="noopener"><img src={Behance} alt="Behance"/></a>
+            <a href="http://instagram.com/UX.frk" target="_blank" rel="noopener"><img src={Insta} alt="Insta"/></a>
+            <a href="https://twitter.com/UXfigura" target="_blank" rel="noopener"><img src={Twitter} alt="Twitter"/></a>
+          </div>
         </div>
       </div>
 

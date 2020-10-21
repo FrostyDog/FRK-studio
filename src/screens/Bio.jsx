@@ -4,7 +4,7 @@ import ContactMe from "../components/ContactMe";
 
 export default function Bio() {
   return (
-    <div class="bio-component">
+    <div className="bio-component">
       <Typography>
         Hello and welcome to my Portfoio Page I am a designer. I create designs for websites and applications in mostly
         minimalistic style. I do believe in power of unique esthetics and style.
