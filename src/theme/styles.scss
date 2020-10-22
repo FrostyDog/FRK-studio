@@ -17,6 +17,9 @@ a {
   justify-content: center;
   align-items: center;
   width: 100%;
+  @media screen and (max-width: 700px) {
+    background-color: white;
+  }
   .left-contact {
     position: absolute;
     z-index: 2;
