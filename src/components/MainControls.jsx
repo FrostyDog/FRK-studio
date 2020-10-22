@@ -55,11 +55,19 @@ export default function StableInfo(props) {
           </Link>
         </Button>
         <div className="left-contact">
-          <Button color="primary">Contact</Button>
+          <Button href="mailto:anna.figura259@gmail.com " color="primary">
+            Contact
+          </Button>
           <div className="icon-wrapper">
-            <a href="https://www.behance.net/uxfrk" target="_blank" rel="noopener"><img src={Behance} alt="Behance"/></a>
-            <a href="http://instagram.com/UX.frk" target="_blank" rel="noopener"><img src={Insta} alt="Insta"/></a>
-            <a href="https://twitter.com/UXfigura" target="_blank" rel="noopener"><img src={Twitter} alt="Twitter"/></a>
+            <a href="https://www.behance.net/uxfrk"  target="_blank" rel="noopener noreferrer" >
+              <img src={Behance} alt="Behance" />
+            </a>
+            <a href="http://instagram.com/UX.frk" target="_blank" rel="noopener noreferrer" >
+              <img src={Insta} alt="Insta" />
+            </a>
+            <a href="https://twitter.com/UXfigura" target="_blank" rel="noopener noreferrer" >
+              <img src={Twitter} alt="Twitter" />
+            </a>
           </div>
         </div>
       </div>

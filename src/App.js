@@ -11,6 +11,9 @@ function App() {
  
   let initialNavigation = () => {
     let x = window.location.href.split('/')
+    if(x.[x.length-1] === "") {
+      return "works"
+    }
     return(x.[x.length-1])
   }
 
