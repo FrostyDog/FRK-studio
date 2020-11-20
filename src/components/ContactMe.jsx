@@ -21,23 +21,35 @@ export default function ContactMe() {
     if (e.target[1].value === "" || e.target[3].value === "" || e.target[5].value === "") {
       alert("Please, fill all of the details");
     } else {
-      emailjs.sendForm("service_frkfrkfrk", "template_nff9fet", e.target, "user_pvw2UgxzHtwfYODiHHnep").then(
-        (result) => {
-          console.log(result.text);
-        },
+      emailjs
+        .sendForm("service_frkfrkfrk", "template_nff9fet", e.target, "user_pvw2UgxzHtwfYODiHHnep")
+        .then(
+          (result) => {
+            alert("Send successfully");
+          },
 
-        (error) => {
-          console.log(error.text);
-        }
-      );
+          (error) => {
+            alert("Something went wrong");
+          }
+        );
     }
+    e.target[1].value = "";
+    e.target[3].value = "";
+    e.target[5].value = "";
   }
 
   return (
     <form className="contact-form" onSubmit={(e) => sendEmail(e)}>
       <input type="hidden" name="contact_number" />
       <TextField id="outlined-basic" name="name" fullWidth label="name" variant="outlined" />
-      <TextField id="outlined-basic" type="email" name="email" fullWidth label="e-mail" variant="outlined" />
+      <TextField
+        id="outlined-basic"
+        type="email"
+        name="email"
+        fullWidth
+        label="e-mail"
+        variant="outlined"
+      />
       <TextField
         id="outlined-multiline-static"
         label="message"

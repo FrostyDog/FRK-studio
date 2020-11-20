@@ -8,6 +8,7 @@ let theme = createMuiTheme({
       fontSize: "9rem",
       "@media (max-width: 800px)": {
         fontSize: "6rem",
+        paddingBottom: "1rem",
       },
 
       fontWeight: 900,

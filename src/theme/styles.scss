@@ -56,6 +56,13 @@ a {
   width: fit-content;
 }
 
+.MuiTypography-h2 {
+  @media screen and (max-width: 450px) {
+    font-size: 3.285714rem !important;
+    padding-bottom: 1rem !important;
+  }
+}
+
 .button {
   min-width: 5% !important;
   margin: 0 1% !important;
@@ -78,6 +85,9 @@ a {
   bottom: 5%;
   left: 50%;
   transform: translate(-50%, -50%);
+  @media screen and (max-width: 1101px) {
+    display: none;
+  }
 }
 
 .secondary {
@@ -203,6 +213,9 @@ a {
 
   .space-20 {
     height: 20vh;
+    @media screen and (max-width: 500px) {
+      height: 10vh;
+    }
   }
 
   .space-5 {
