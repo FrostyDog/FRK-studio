@@ -83,8 +83,8 @@ export default function StableInfo(props) {
 
         <div className="sub-text">
           <Typography variant="h5" color="primary">
-            Certified <br />
-            <span className="bold">UX/UI Designer</span>
+            Designer and owner of <br />
+            <span className="bold">FRK design studio</span>
           </Typography>
         </div>
         <img className={`arrow ${props.stance}`} src={require("../assets/icons/right-arrow.png")} alt="" />
