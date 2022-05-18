@@ -6,8 +6,8 @@ import Martins from "../assets/workItems/dr-martin.png";
 import Modernism from "../assets/workItems/pp-modernism.png";
 import CyberSec from "../assets/workItems/syber-sec.png";
 import SushiFreak from "../assets/workItems/sushifreak.png";
-import Ploho from "../assets/workItems/sushifreak.png";
-import Playjoy from "../assets/workItems/sushifreak.png";
+import Ploho from "../assets/workItems/ploho.png";
+import Playjoy from "../assets/workItems/playjoy.png";
 
 export default function Works(props) {
   return (
