@@ -17,10 +17,6 @@ function App() {
     return(x.[x.length-1])
   }
 
-
-
-
-
   // navigation function
   let setNewStance = (newStance) => {
     changeStance(newStance);

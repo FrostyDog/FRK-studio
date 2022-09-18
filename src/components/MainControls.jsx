@@ -7,6 +7,7 @@ import "../theme/animations.scss";
 import Behance from "../assets/icons/behance.png";
 import Insta from "../assets/icons/instagram-logo.png";
 import Twitter from "../assets/icons/twitter-logo-button.png";
+import Linkedin from "../assets/icons/linkedin.svg";
 
 export default function StableInfo(props) {
   let worksOutlined;
@@ -67,6 +68,9 @@ export default function StableInfo(props) {
             </a>
             <a href="https://twitter.com/UXfigura" target="_blank" rel="noopener noreferrer" >
               <img src={Twitter} alt="Twitter" />
+            </a>
+            <a href="https://www.linkedin.com/in/anna-figura-73964a170/" target="_blank" rel="noopener noreferrer" >
+              <img src={Linkedin} alt="LinkedIn" />
             </a>
           </div>
         </div>

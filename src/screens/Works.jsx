@@ -6,7 +6,7 @@ import Martins from "../assets/workItems/dr-martin.png";
 import Modernism from "../assets/workItems/pp-modernism.png";
 import CyberSec from "../assets/workItems/syber-sec.png";
 import SushiFreak from "../assets/workItems/sushifreak.png";
-import Ploho from "../assets/workItems/ploho.png";
+import Instock from "../assets/new-work-items/instock.png";
 import Playjoy from "../assets/workItems/playjoy.png";
 
 export default function Works(props) {
@@ -14,14 +14,12 @@ export default function Works(props) {
     <div>
       <div style={{ height: "5rem" }}></div>
       <WorksItems
-        itemImage={Ploho}
+        itemImage={Instock}
         orientation="right"
-        title="PLOHO band"
-        text="One-page website made for Russian post-punk band, containing
-        nessessary information about music band, tours, videos and 
-        currently supported for further updates. I enjoyed working on 
-        this project, since i am a big fan of this genre of music and
-        especially creations of this music group. "
+        title="Instock"
+        itemImageLink="https://www.behance.net/gallery/133582491/UXUI-InStock-Supplies-Manager"
+        text="A perfect software to monitor product refills in franchise shops, 
+        fully customizable by suppliers, easy to monitor and manage data and staff."
       />
       <WorksItems
         itemImage={Playjoy}
