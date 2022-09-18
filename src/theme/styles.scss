@@ -223,6 +223,27 @@ a {
   }
 }
 
+.certificates-wrapper{
+  display: flex;
+  align-items: center;
+  margin: 2.5% 0;
+  flex-wrap: wrap;
+  z-index: 3;
+  .cert-item {
+    margin: 0 1rem;
+    display: flex;
+    min-height: 50px;
+    font-weight: 900;
+    a {
+      display: flex;
+      align-items: center;
+     img {
+       margin: 0 0.5rem;
+     }
+    }
+  }
+}
+
 @media (max-width: 1450px) {
   .header-info.works {
     .main-title {
