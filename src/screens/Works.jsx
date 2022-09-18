@@ -81,6 +81,7 @@ export default function Works(props) {
         itemImage={CyberSec}
         orientation="right"
         title="Cyber Security"
+        itemImageLink="https://www.behance.net/gallery/102288665/Cyber-Security-Website-Design"
         text="Design made for European IT start-up, in the branch of cybersecurity. 
         The website with full list of services and pricing. Made with the 
         help of Adobe PS and XD. Main point here is to show the responsiveness 
