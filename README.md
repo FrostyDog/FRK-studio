@@ -1,4 +1,4 @@
-# GitHub user finder
+# Anna's Figura website repo
 
 ## About
 
