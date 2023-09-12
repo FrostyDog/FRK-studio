@@ -1,15 +1,14 @@
 import React from "react";
 import { useState } from "react";
-import { Button, Typography } from "@material-ui/core";
-import { Link } from "react-router-dom";
+import { Button, Typography } from '@mui/material';
+import { Link } from 'next/link';
 import RoundText from "../assets/round-text.svg";
-import "../theme/animations.scss";
 import Behance from "../assets/icons/behance.png";
 import Insta from "../assets/icons/instagram-logo.png";
 import Twitter from "../assets/icons/twitter-logo-button.png";
 import Linkedin from "../assets/icons/linkedin.svg";
 
-export default function StableInfo(props) {
+export default function BaseWithControls(props) {
   let worksOutlined;
   let bioOutlined;
   let [RoundTextStance, setRoundTextStance] = useState(false);

@@ -20,7 +20,7 @@ a {
   @media screen and (max-width: 700px) {
     background-color: white;
   }
-  .left-contact {
+  & .left-contact {
     position: absolute;
     z-index: 2;
     right: 10%;
@@ -28,9 +28,9 @@ a {
       position: static;
       padding-left: 20px;
     }
-    .icon-wrapper {
+    & .icon-wrapper {
       display: flex;
-      a {
+      & a {
         display: flex;
         justify-content: center;
         background-color: unset;
@@ -40,7 +40,7 @@ a {
           border-radius: 5px;
         }
       }
-      img {
+      & img {
         width: 80%;
       }
     }
@@ -102,20 +102,20 @@ a {
   flex-direction: column;
   justify-content: start;
   transition: all 1s ease-in-out;
-  &.bio {
+  & &.bio {
     min-height: 45vh;
   }
-  .sub-text {
+  & .sub-text {
     margin: 2.5% 0;
   }
-  .main-title {
+  & .main-title {
     transition: all 1s ease-in-out;
     position: relative;
     max-width: fit-content;
     left: 0;
     top: 0;
   }
-  .round-text {
+  & .round-text {
     position: absolute;
     height: 250%;
     width: 250%;
@@ -127,7 +127,7 @@ a {
     }
   }
 
-  &.works {
+   &.works {
     margin-top: 25vh;
 
     .main-title {
@@ -138,19 +138,19 @@ a {
   }
 }
 // work item
-.work-item-wrapper {
+& .work-item-wrapper {
   padding-top: 10%;
   margin-bottom: 7% !important;
   position: relative;
   img {
     width: 100%;
   }
-  .title {
+  & .title {
     margin-bottom: 10%;
     position: relative;
     white-space: nowrap;
   }
-  .background-color {
+  & .background-color {
     background-color: #ffc0cb;
     position: absolute;
     top: 50%;
@@ -159,10 +159,10 @@ a {
     width: 100%;
     z-index: -2;
   }
-  p {
+  & p {
     margin-bottom: 10%;
   }
-  .background {
+  & .background {
     position: absolute;
     z-index: -2;
     width: 100%;

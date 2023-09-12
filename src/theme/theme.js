@@ -1,6 +1,6 @@
-import { createMuiTheme } from "@material-ui/core/styles";
+import { createTheme } from '@mui/material/styles';
 
-let theme = createMuiTheme({
+let theme = createTheme({
   typography: {
     fontFamily: "'Poppins', sans-serif;",
     fontSize: 16,

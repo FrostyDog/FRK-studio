@@ -1,7 +1,7 @@
 import React from "react";
 import emailjs from "emailjs-com";
-import { Button, TextField } from "@material-ui/core";
-import "../theme/form.scss";
+import { Button, TextField } from "@mui/material";
+
 
 emailjs.init("user_pvw2UgxzHtwfYODiHHnep");
 

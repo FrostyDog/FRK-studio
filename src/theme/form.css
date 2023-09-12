@@ -2,21 +2,21 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  * {
+  & * {
     margin: 10px 0;
   }
 
-  button {
+  & button {
     width: 35%;
     border-radius: 15px;
     margin-top: 20px!important;
   }
 
-  .MuiOutlinedInput-notchedOutline {
+  & .MuiOutlinedInput-notchedOutline {
     border-color: #000;
   }
 
-  .MuiInputLabel-outlined {
+  & .MuiInputLabel-outlined {
     color: #000;
   }
 }

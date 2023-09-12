@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Typography } from "@material-ui/core";
+import { Grid, Typography } from '@mui/material';
 import Globe from "../assets/icons/Globe.svg";
 
 export default function WorksItems(props) {

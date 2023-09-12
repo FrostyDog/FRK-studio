@@ -1,13 +1,17 @@
 import React from "react";
-import { Typography } from "@material-ui/core";
+import Typography from '@mui/material/Typography';
 import ContactMe from "../components/ContactMe";
 import Cert from "../assets/icons/certificate-icon.svg"
 import CV from "../assets/icons/CV-icon.svg"
 import Idf from "../assets/icons/member-icon.svg"
 
-import IdfPdf from "../assets/pdf/idf-membership.pdf"
-import CVPDF from "../assets/pdf/CV-2022-AFigura.pdf"
-import CertificatePdf from "../assets/pdf/certificate.pdf"
+// import IdfPdf from "../assets/pdf/idf-membership.pdf"
+// import CVPDF from "../assets/pdf/CV-2022-AFigura.pdf"
+// import CertificatePdf from "../assets/pdf/certificate.pdf"
+
+const IdfPdf = "../assets/pdf/idf-membership.pdf"
+const CVPDF = "../assets/pdf/CV-2022-AFigura.pdf"
+const CertificatePdf = "../assets/pdf/certificate.pdf"
 
 export default function Bio() {
   return (
